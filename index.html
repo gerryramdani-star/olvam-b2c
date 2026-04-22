@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLVAM - Kehangatan Nyaman untuk Si Kecil</title>
+    <meta name="description" content="OLVAM Aromatic Telon Oil. Solusi tepat untuk perut kembung, tidur lelap, dan perlindungan dari nyamuk.">
+    
+    <!-- Fonts: Quicksand (Headings) & Nunito (Body) for a softer, friendly feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons: Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Config for Soft, Maternal Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        heading: ['Quicksand', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e', // Soft Rose/Coral primary
+                            600: '#e11d48',
+                            700: '#be123c',
+                        },
+                        accent: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Soft Teal for health/natural
+                            600: '#0d9488',
+                        },
+                        warm: '#fffdfa' // Warm white background
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(244, 63, 94, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'MASUKKAN_ID_PIXEL_ANDA_DI_SINI');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=MASUKKAN_ID_PIXEL_ANDA_DI_SINI&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=MASUKKAN_ID_ANALYTICS_ANDA_DI_SINI"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'MASUKKAN_ID_ANALYTICS_ANDA_DI_SINI');
+    </script>
+    <!-- End Google tag -->
+
+</head>
+<body class="font-sans text-slate-600 antialiased overflow-x-hidden bg-warm">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-brand-50 transition-all duration-300">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Text Logo (bisa diganti img seperti yang dipelajari sebelumnya) -->
+                    <span class="font-heading font-bold text-2xl text-brand-500 tracking-tight">OLVAM</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#manfaat" class="text-slate-500 hover:text-brand-500 font-semibold transition">Manfaat</a>
+                    <a href="#testimoni" class="text-slate-500 hover:text-brand-500 font-semibold transition">Testimoni</a>
+                    <a href="#faq" class="text-slate-500 hover:text-brand-500 font-semibold transition">FAQ</a>
+                    <a href="#beli" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2.5 rounded-full font-bold transition shadow-soft flex items-center gap-2">
+                        Beli Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-24 overflow-hidden">
+        <!-- Soft decorative background -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-50 rounded-full blur-3xl opacity-60 -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-accent-50 rounded-full blur-3xl opacity-60 -z-10"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="max-w-xl order-2 lg:order-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-50 border border-accent-100 text-accent-600 text-sm font-bold mb-6">
+                        <i data-lucide="leaf" class="w-4 h-4"></i>
+                        100% Bahan Alami & Aman
+                    </div>
+                    <h1 class="font-heading text-4xl lg:text-5xl font-bold text-slate-800 leading-tight mb-6">
+                        Berikan Kehangatan & Perlindungan Nyaman untuk <span class="text-brand-500">Si Kecil.</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 mb-8 leading-relaxed">
+                        OLVAM Aromatic Telon Oil membantu meredakan perut kembung, mencegah gigitan nyamuk, dan membuat bayi tidur lebih lelap dengan aroma yang menenangkan.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#beli" class="inline-flex justify-center items-center px-8 py-4 bg-brand-500 text-white rounded-full font-bold text-lg hover:bg-brand-600 transition shadow-soft transform hover:-translate-y-1">
+                            Pesan Sekarang
+                            <i data-lucide="shopping-bag" class="w-5 h-5 ml-2"></i>
+                        </a>
+                        <div class="flex items-center justify-center gap-3 px-4 text-sm font-semibold text-slate-500 mt-4 sm:mt-0">
+                            <div class="flex -space-x-2">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Ibu">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="Ibu">
+                                <div class="w-8 h-8 rounded-full border-2 border-white bg-brand-100 flex items-center justify-center text-xs text-brand-600 font-bold">+10k</div>
+                            </div>
+                            <span>Bunda sudah mencoba</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual (Emotional Image) -->
+                <div class="order-1 lg:order-2 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <!-- Placeholder: Sleeping baby with mother -->
+                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bayi tidur lelap" class="w-full h-auto object-cover transform hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="bg-white/95 backdrop-blur p-4 rounded-2xl shadow-lg flex items-center gap-4">
+                                <div class="bg-accent-100 p-3 rounded-full text-accent-600">
+                                    <i data-lucide="moon" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="font-heading font-bold text-slate-800">Tidur Lebih Lelap</p>
+                                    <p class="text-sm text-slate-500">Tanpa gangguan rewel malam hari.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section (Agitation) -->
+    <section class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="font-heading text-2xl md:text-3xl font-bold text-slate-800 mb-10">
+                Sering Mengalami Hal Ini Pada Si Kecil, Bunda?
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-red-400 mx-auto mb-4">
+                        <i data-lucide="frown" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Rewel & Menangis Terus</h3>
+                    <p class="text-sm text-slate-500">Bayi merasa tidak nyaman karena perut kembung atau masuk angin.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-red-400 mx-auto mb-4">
+                        <i data-lucide="bug" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Gigitan Nyamuk Nakal</h3>
+                    <p class="text-sm text-slate-500">Kulit sensitif bayi mudah kemerahan dan gatal akibat gigitan serangga.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-red-400 mx-auto mb-4">
+                        <i data-lucide="cloud-rain" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Susah Tidur Nyenyak</h3>
+                    <p class="text-sm text-slate-500">Sering terbangun di malam hari karena kedinginan atau merasa cemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution / Benefits Section -->
+    <section id="manfaat" class="py-20 lg:py-28 bg-brand-50 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-500 font-bold uppercase tracking-wider text-sm">Solusi Terbaik Bunda</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-800 mt-2">
+                    Kenapa Bunda Memilih OLVAM?
+                </h2>
+                <p class="mt-4 text-slate-600 text-lg">Diformulasikan khusus dengan cinta, menggunakan bahan-bahan alami yang lembut untuk kulit sensitif bayi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Feature List -->
+                <div class="space-y-8 order-2 md:order-1">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-500 flex-shrink-0">
+                            <i data-lucide="sun" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-xl text-slate-800 mb-1">Kehangatan Pas, Tidak Panas</h3>
+                            <p class="text-slate-600 leading-relaxed">Memberikan rasa hangat yang pas untuk meredakan kolik dan perut kembung tanpa membuat kulit bayi iritasi atau kepanasan.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-500 flex-shrink-0">
+                            <i data-lucide="shield" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-xl text-slate-800 mb-1">Proteksi Nyamuk 12 Jam</h3>
+                            <p class="text-slate-600 leading-relaxed">Melindungi si kecil dari gigitan nyamuk dan serangga, aman untuk digunakan saat tidur maupun bermain di luar ruangan.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-500 flex-shrink-0">
+                            <i data-lucide="wind" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-xl text-slate-800 mb-1">Aroma Terapi Menenangkan</h3>
+                            <p class="text-slate-600 leading-relaxed">Wangi lembut yang menenangkan (tidak menyengat) membantu bayi merasa rileks dan lebih mudah tertidur lelap.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-500 flex-shrink-0">
+                            <i data-lucide="droplet" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-xl text-slate-800 mb-1">Tidak Lengket & Cepat Meresap</h3>
+                            <p class="text-slate-600 leading-relaxed">Tekstur ringan yang nyaman di kulit, cepat menyerap, dan tidak meninggalkan noda pada pakaian bayi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Image -->
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div class="relative w-full max-w-sm">
+                        <!-- Decorative background behind product -->
+                        <div class="absolute inset-0 bg-white rounded-[3rem] shadow-xl rotate-6 transform transition-transform hover:rotate-3 duration-300"></div>
+                        <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Produk OLVAM" class="relative z-10 rounded-[3rem] shadow-md border-8 border-white object-cover aspect-[4/5] w-full">
+                        
+                        <!-- Mini Badge -->
+                        <div class="absolute -right-4 top-10 bg-accent-500 text-white font-bold px-4 py-2 rounded-full shadow-lg z-20 flex items-center gap-1 transform rotate-12">
+                            <i data-lucide="heart" class="w-4 h-4 fill-current"></i> BPOM Approved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl font-bold text-slate-800">Apa Kata Bunda Tentang OLVAM?</h2>
+                <p class="mt-4 text-slate-500">Cerita nyata dari para ibu yang sudah membuktikan manfaatnya.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimoni 1 -->
+                <div class="bg-warm p-6 rounded-2xl border border-slate-100 shadow-sm relative">
+                    <i data-lucide="quote" class="absolute top-4 right-4 w-8 h-8 text-brand-100"></i>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Semenjak pakai Olvam sehabis mandi sore, anakku tidurnya jadi pules banget. Nggak pernah lagi rewel tengah malam karena kembung. Wanginya juga enak banget, kalem gitu."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-700">R</div>
+                        <div>
+                            <p class="font-bold text-slate-800 text-sm">Bunda Rina</p>
+                            <p class="text-xs text-slate-500">Ibu dari bayi 6 bulan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="bg-warm p-6 rounded-2xl border border-slate-100 shadow-sm relative">
+                    <i data-lucide="quote" class="absolute top-4 right-4 w-8 h-8 text-brand-100"></i>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Suka banget karena nggak lengket! Biasanya minyak telon lain bikin baju bayi jadi bernoda, tapi Olvam ini cepat nyerap. Kulit adek juga aman dari nyamuk pas main di teras."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-accent-200 rounded-full flex items-center justify-center font-bold text-accent-700">D</div>
+                        <div>
+                            <p class="font-bold text-slate-800 text-sm">Bunda Dinda</p>
+                            <p class="text-xs text-slate-500">Ibu dari balita 2 tahun</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="bg-warm p-6 rounded-2xl border border-slate-100 shadow-sm relative">
+                    <i data-lucide="quote" class="absolute top-4 right-4 w-8 h-8 text-brand-100"></i>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Awalnya ragu mau ganti merk, tapi setelah lihat bahannya alami aku coba. Ternyata beneran sehangat itu tapi nggak bikin kulit anakku yang sensitif jadi merah. Recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-700">S</div>
+                        <div>
+                            <p class="font-bold text-slate-800 text-sm">Bunda Sarah</p>
+                            <p class="text-xs text-slate-500">Ibu dari bayi newborn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-warm border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-500 font-bold uppercase tracking-wider text-sm">Masih Ragu?</span>
+                <h2 class="font-heading text-3xl font-bold text-slate-800 mt-2">Pertanyaan Seputar OLVAM</h2>
+                <p class="mt-4 text-slate-500">Temukan jawaban dari pertanyaan yang sering ditanyakan Bunda di sini.</p>
+            </div>
+
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm [&_summary::-webkit-details-marker]:hidden" open>
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-heading font-bold text-lg">
+                        Apakah OLVAM aman untuk bayi baru lahir (newborn)?
+                        <div class="shrink-0 text-brand-500 transition duration-300 group-open:-rotate-180">
+                            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        Tentu saja, Bunda! OLVAM diformulasikan dengan 100% bahan alami pilihan yang sangat lembut dan aman untuk kulit sensitif bayi baru lahir. Tidak mengandung bahan kimia buatan.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-heading font-bold text-lg">
+                        Apakah sudah terdaftar di BPOM?
+                        <div class="shrink-0 text-brand-500 transition duration-300 group-open:-rotate-180">
+                            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        Iya, OLVAM sudah lulus uji dan terdaftar resmi di BPOM Indonesia. Bunda bisa tenang karena kualitas dan keamanannya sudah terjamin oleh standar kesehatan yang ketat.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-heading font-bold text-lg">
+                        Apakah minyak telon ini lengket dan bikin baju bernoda?
+                        <div class="shrink-0 text-brand-500 transition duration-300 group-open:-rotate-180">
+                            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        Tidak sama sekali. Tekstur OLVAM sangat ringan, cepat meresap ke dalam kulit, dan tidak meninggalkan rasa lengket atau noda kekuningan pada pakaian si kecil.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-heading font-bold text-lg">
+                        Bagaimana cara kerja perlindungan nyamuknya?
+                        <div class="shrink-0 text-brand-500 transition duration-300 group-open:-rotate-180">
+                            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        OLVAM mengandung ekstrak alami aromaterapi yang tidak disukai serangga. Ini memberikan perlindungan aktif mencegah nyamuk mendekat tanpa menggunakan bau menyengat atau bahan bakar pestisida.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Checkout Section -->
+    <section id="beli" class="py-20 bg-slate-800 text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-yellow-400 text-yellow-900 font-extrabold px-6 py-2 rounded-full mb-6 text-sm md:text-base tracking-wide shadow-lg animate-bounce">
+                    🎉 PROMO SPESIAL HEMAT HINGGA 40%
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Pesan Sekarang Untuk Si Kecil</h2>
+                <p class="text-slate-300">Pilih ukuran dan paket yang paling pas untuk kebutuhan harian Bunda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch pt-4">
+                
+                <!-- Package 1: 1x 50ml -->
+                <div class="bg-slate-700 rounded-3xl p-6 border border-slate-600 flex flex-col h-full">
+                    <!-- Tempat Foto Produk 1x 50ml -->
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-slate-600">
+                        <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=400&q=80" alt="Gambar 1 Botol 50ml" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Coba Dulu</h3>
+                        <p class="text-slate-400 text-sm">1 Botol (50 ml)</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-slate-400 line-through text-sm">Rp 55.000</span>
+                        </div>
+                        <span class="text-3xl font-bold text-white">Rp 33.000</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 mb-8 flex-1 text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-400 flex-shrink-0"></i> Pas untuk tester pertama</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-400 flex-shrink-0"></i> Praktis dibawa bepergian</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20pesan%20OLVAM%201%20Botol%2050ml" target="_blank" onclick="trackPackageClick(event, '1 Botol 50ml', 33000)" class="block w-full py-3 text-center bg-white text-slate-800 font-bold rounded-xl hover:bg-slate-100 transition mt-auto">
+                        Pilih 50 ml
+                    </a>
+                </div>
+
+                <!-- Package 2: 1x 100ml -->
+                <div class="bg-slate-700 rounded-3xl p-6 border border-slate-600 flex flex-col h-full">
+                    <!-- Tempat Foto Produk 1x 100ml -->
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-slate-600">
+                        <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=400&q=80" alt="Gambar 1 Botol 100ml" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Lebih Puas</h3>
+                        <p class="text-slate-400 text-sm">1 Botol (100 ml)</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-slate-400 line-through text-sm">Rp 75.000</span>
+                        </div>
+                        <span class="text-3xl font-bold text-white">Rp 45.000</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 mb-8 flex-1 text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-400 flex-shrink-0"></i> Isi lebih banyak</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-accent-400 flex-shrink-0"></i> Pemakaian harian di rumah</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20pesan%20OLVAM%201%20Botol%20100ml" target="_blank" onclick="trackPackageClick(event, '1 Botol 100ml', 45000)" class="block w-full py-3 text-center bg-white text-slate-800 font-bold rounded-xl hover:bg-slate-100 transition mt-auto">
+                        Pilih 100 ml
+                    </a>
+                </div>
+
+                <!-- Package 3: 3x 50ml (Lebih Hemat) -->
+                <div class="bg-slate-700 rounded-3xl p-6 border-2 border-yellow-400/50 flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wide z-10">
+                        Lebih Hemat
+                    </div>
+                    <!-- Tempat Foto Produk 3x 50ml -->
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-slate-600 mt-2">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&q=80" alt="Gambar Paket 3 Botol 50ml" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Paket Triple 50</h3>
+                        <p class="text-slate-300 text-sm">3 Botol (50 ml)</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-slate-400 line-through text-sm">Rp 165.000</span>
+                        </div>
+                        <span class="text-3xl font-bold text-yellow-400">Rp 89.500</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 mb-8 flex-1 text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-yellow-400 flex-shrink-0"></i> Diskon jauh lebih besar</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-yellow-400 flex-shrink-0"></i> Stok kamar & tas jalan-jalan</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20pesan%20OLVAM%203%20Botol%2050ml" target="_blank" onclick="trackPackageClick(event, '3 Botol 50ml', 89500)" class="block w-full py-3 text-center bg-yellow-400/10 border border-yellow-400 text-yellow-400 font-bold rounded-xl hover:bg-yellow-400 hover:text-yellow-900 transition mt-auto">
+                        Ambil Paket Ini
+                    </a>
+                </div>
+
+                <!-- Package 4: 3x 100ml (Best Deal) -->
+                <div class="bg-gradient-to-b from-brand-500 to-brand-600 rounded-3xl p-6 border border-brand-400 shadow-2xl flex flex-col h-full relative transform lg:-translate-y-4">
+                    <div class="absolute top-0 inset-x-0 flex justify-center transform -translate-y-1/2 z-10">
+                        <span class="bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide shadow-md whitespace-nowrap">
+                            Best Deal
+                        </span>
+                    </div>
+                    <!-- Tempat Foto Produk 3x 100ml -->
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-5 bg-brand-400 mt-4">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&q=80" alt="Gambar Paket 3 Botol 100ml" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Paket Triple 100</h3>
+                        <p class="text-brand-100 text-sm">3 Botol (100 ml)</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-brand-200 line-through text-sm">Rp 225.000</span>
+                        </div>
+                        <span class="text-3xl font-bold text-white">Rp 119.500</span>
+                    </div>
+                    <ul class="space-y-3 text-white/90 mb-8 flex-1 text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 mt-0.5 text-yellow-300 flex-shrink-0"></i> Potongan harga paling maksimal</li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 mt-0.5 text-yellow-300 flex-shrink-0"></i> Paling laris untuk stok Bunda</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20pesan%20OLVAM%20Best%20Deal%203%20Botol%20100ml" target="_blank" onclick="trackPackageClick(event, '3 Botol 100ml Best Deal', 119500)" class="block w-full py-3 text-center bg-yellow-400 text-yellow-900 font-extrabold rounded-xl hover:bg-yellow-300 transition shadow-lg mt-auto">
+                        Ambil Promo Ini
+                    </a>
+                </div>
+
+            </div>
+            
+            <p class="text-center text-slate-400 mt-12 text-sm flex items-center justify-center gap-2">
+                <i data-lucide="lock" class="w-4 h-4"></i> Transaksi aman via WhatsApp Admin Resmi. Pengiriman ke seluruh Indonesia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-10 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 text-center flex flex-col items-center">
+            <span class="font-heading font-bold text-2xl text-brand-500 mb-4">OLVAM</span>
+            <p class="text-slate-500 text-sm mb-6 max-w-md">Memberikan kehangatan dan senyuman untuk setiap keluarga di Indonesia. Dirancang khusus untuk kulit bayi yang sensitif.</p>
+            
+            <div class="flex gap-6 mb-8 text-slate-400">
+                <!-- Social Media Icons placeholder -->
+                <a href="#" class="hover:text-brand-500 transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-brand-500 transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+            </div>
+            
+            <p class="text-slate-400 text-xs">&copy; 2024 OLVAM Indonesia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Track Package Clicks to Meta & Google Analytics (Dengan Pencegahan Duplikat)
+        function trackPackageClick(e, packageName, price) {
+            const btn = e.currentTarget;
+            
+            // Cek apakah tombol baru saja diklik (Cooldown aktif)
+            if (btn.dataset.tracked === 'true') {
+                return true; // Biarkan link WA tetap terbuka, tapi abaikan event tracking
+            }
+            
+            // Tandai tombol sebagai 'sudah diklik'
+            btn.dataset.tracked = 'true';
+            
+            // Reset status setelah 3 detik (berjaga-jaga jika audiens batal dan klik lagi nanti)
+            setTimeout(() => {
+                btn.dataset.tracked = 'false';
+            }, 3000);
+
+            // Trigger Event Meta Pixel (Lead / InitiateCheckout)
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', {
+                    content_name: packageName,
+                    currency: 'IDR',
+                    value: price
+                });
+            }
+
+            // Trigger Event Google Analytics 4 (generate_lead)
+            if (typeof gtag === 'function') {
+                gtag('event', 'generate_lead', {
+                    currency: 'IDR',
+                    value: price,
+                    items: [{ item_name: packageName }]
+                });
+            }
+        }
+
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Simple Navbar blur effect
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
