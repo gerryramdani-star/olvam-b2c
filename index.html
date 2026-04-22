@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLVAM - Kehangatan Nyaman untuk Si Kecil</title>
+    <title>OLVAM - Aromatic Telon Oil</title>
     <meta name="description" content="OLVAM Aromatic Telon Oil. Solusi tepat untuk perut kembung, tidur lelap, dan perlindungan dari nyamuk.">
     
     <!-- Fonts: Quicksand (Headings) & Nunito (Body) for a softer, friendly feel -->
@@ -63,11 +63,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'MASUKKAN_ID_PIXEL_ANDA_DI_SINI');
+    fbq('init', '2624011007971806');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=MASUKKAN_ID_PIXEL_ANDA_DI_SINI&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=2624011007971806&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 
@@ -560,18 +560,18 @@
                 btn.dataset.tracked = 'false';
             }, 3000);
 
-            // Trigger Event Meta Pixel (Lead / InitiateCheckout)
+            // Trigger Event Meta Pixel (AddToCart)
             if (typeof fbq === 'function') {
-                fbq('track', 'Lead', {
+                fbq('track', 'AddToCart', {
                     content_name: packageName,
                     currency: 'IDR',
                     value: price
                 });
             }
 
-            // Trigger Event Google Analytics 4 (generate_lead)
+            // Trigger Event Google Analytics 4 (add_to_cart)
             if (typeof gtag === 'function') {
-                gtag('event', 'generate_lead', {
+                gtag('event', 'add_to_cart', {
                     currency: 'IDR',
                     value: price,
                     items: [{ item_name: packageName }]
